@@ -7,6 +7,7 @@ from .database import Base, engine
 from .routers import notes
 
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     Base.metadata.create_all(bind=engine)
